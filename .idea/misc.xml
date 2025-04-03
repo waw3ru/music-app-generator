@@ -3,7 +3,4 @@
   <component name="BunSettings">
     <option name="bunPath" value="$USER_HOME$/.bun/bin/bun" />
   </component>
-  <component name="OptimizeOnSaveOptions">
-    <option name="myRunOnSave" value="true" />
-  </component>
 </project>
