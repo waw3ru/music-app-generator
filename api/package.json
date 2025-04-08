@@ -4,12 +4,12 @@
     "type": "module",
     "private": true,
     "scripts": {
+        "start": "bun run index.ts",
         "dev": "bun run --hot index.ts",
         "lint": "bunx --bun eslint \"src/**/*.{js,ts,json,sql}\"",
         "lint:fix": "bunx --bun eslint --cache --fix \"src/**/*.{js,ts,json,sql}\"",
         "format": "bunx --bun prettier . --check",
-        "format:write": "bunx --bun prettier . --write",
-        "postinstall": "pnpm install --lockfile-only"
+        "format:write": "bunx --bun prettier . --write"
     },
     "devDependencies": {
         "@eslint/js": "^9.21.0",
