@@ -1,0 +1,43 @@
+name: Deploy To Github Container Registry
+
+on:
+  workflow_dispatch:
+
+jobs:
+  app-builder:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Checkout GitHub Action'
+        uses: actions/checkout@main
+
+      - name: 'Login to GitHub Container Registry'
+        uses: docker/login-action@v1
+        with:
+          registry: ghcr.io
+          username: ${{github.actor}}
+          password: ${{secrets.CONTAINER_TOKEN}}
+
+      - name: 'Build And Push Image'
+        run: |
+          cd app
+          docker build . --tag ghcr.io/waw3ru/music-gen-app:latest
+          docker push ghcr.io/waw3ru/music-gen-app:latest
+
+  api-builder:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Checkout GitHub Action'
+        uses: actions/checkout@main
+
+      - name: 'Login to GitHub Container Registry'
+        uses: docker/login-action@v1
+        with:
+          registry: ghcr.io
+          username: ${{github.actor}}
+          password: ${{secrets.CONTAINER_TOKEN}}
+
+      - name: 'Build And Push Image'
+        run: |
+          cd app
+          docker build . --tag ghcr.io/waw3ru/music-gen-api:latest
+          docker push ghcr.io/waw3ru/music-gen-api:latest
