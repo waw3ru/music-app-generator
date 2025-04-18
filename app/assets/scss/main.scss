@@ -10,10 +10,10 @@ body {
 }
 
 body {
-  background: linear-gradient(145deg, #001F3F, #4F1C51,  #3A6D8C);
-  background-size: 400% 400%;
-  animation: gradient 10s ease-in-out infinite;
-  animation-direction: alternate-reverse;
+  background: radial-gradient(ellipse at bottom, #030637 10%, #3C0753 50%, #720455 50%, #3C0753 40%);
+  background-size: 500% 500%;
+  animation: gradient 40s ease-in-out infinite;
+  animation-direction: alternate;
   height: 100vh;
   color: white;
 }
