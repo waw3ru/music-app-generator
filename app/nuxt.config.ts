@@ -8,6 +8,11 @@ export default defineNuxtConfig({
   runtimeConfig: {
     apiServerUrl: ''
   },
+  vite: {
+    server: {
+      allowedHosts: true,
+    },
+  },
   modules: [
     '@nuxt/eslint',
     '@nuxt/fonts',
