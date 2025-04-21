@@ -16,20 +16,6 @@ export default defineNuxtConfig({
       allowedHosts: true,
     },
   },
-  primevue: {
-    options: {
-      ripple: true,
-      inputVariant: 'filled',
-      theme: {
-        preset: Aura,
-        options: {
-          prefix: 'p',
-          darkModeSelector: 'system',
-          cssLayer: false
-        }
-      }
-    }
-  },
   modules: [
     '@nuxt/eslint',
     '@nuxt/fonts',
@@ -48,4 +34,18 @@ export default defineNuxtConfig({
   css: [
     '~/assets/scss/main.scss'
   ],
+  primevue: {
+    options: {
+      ripple: true,
+      inputVariant: 'filled',
+      theme: {
+        preset: Aura,
+        options: {
+          prefix: 'p',
+          darkModeSelector: 'system',
+          cssLayer: false
+        }
+      }
+    }
+  },
 })
