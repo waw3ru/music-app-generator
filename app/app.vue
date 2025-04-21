@@ -13,7 +13,3 @@ if (import.meta.server) {
     <NuxtPage />
   </NuxtLayout>
 </template>
-
-<style lang="scss">
-@use "~/assets/scss/main.scss";
-</style>

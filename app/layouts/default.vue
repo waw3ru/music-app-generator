@@ -1,5 +1,5 @@
 <template>
-  <section id="page" class="row center-xs" :class="$style.page">
+  <section id="page" :class="$style.page">
     <slot />
   </section>
 </template>
@@ -7,10 +7,10 @@
 <script setup lang="ts">
 </script>
 
-<style module scoped>
+<style module scoped lang="scss">
 .page {
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
