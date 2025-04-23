@@ -44,7 +44,7 @@ $topbar-height: 4.875rem;
   display: block;
   margin: 0;
   padding: 0;
-  //overflow: hidden;
+  overflow: hidden;
 }
 
 .page-topbar {
@@ -67,7 +67,7 @@ $topbar-height: 4.875rem;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  padding: 0.625rem 1rem;
+  padding: 5.625rem 1rem;
 }
 
 .typewriter {
@@ -76,6 +76,7 @@ $topbar-height: 4.875rem;
   flex-shrink: 0;
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
 
   h1 {
