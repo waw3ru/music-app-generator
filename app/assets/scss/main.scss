@@ -1,5 +1,6 @@
 @forward "anime";
 
+@forward 'primeicons/primeicons.css';
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&family=Special+Gothic&display=swap');
 
 * {
@@ -35,7 +36,7 @@ body {
 
 body {
   background: radial-gradient(ellipse at bottom, #030637 10%, #3C0753 50%, #720455 50%, #3C0753 40%);
-  //background-size: 500% 500%;
+  background-size: 450% 400%;
   animation: gradient 20s ease-in-out infinite;
   animation-direction: alternate;
   color: white;
