@@ -16,8 +16,8 @@
     <img src="~/assets/images/logo.svg" alt="Logo" :class="$style['logo']" >
 
     <div :class="$style['page-action-buttons']">
-      <Button label="Sign In" variant="outlined" size="large" style="margin-inline: 0.625rem" />
-      <Button label="Sign Up" size="large" />
+      <Button label="Sign In" severity="secondary"  size="large" style="margin-inline: 0.625rem" />
+      <Button label="Sign Up" size="large" raised />
     </div>
   </div>
 
