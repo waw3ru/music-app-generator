@@ -12,7 +12,7 @@
         "format:write": "bunx --bun prettier . --write"
     },
     "devDependencies": {
-        "@eslint/js": "^9.21.0",
+        "@eslint/js": "^9.26.0",
         "@types/body-parser": "^1.19.5",
         "@types/bun": "latest",
         "@types/cors": "^2.8.17",
